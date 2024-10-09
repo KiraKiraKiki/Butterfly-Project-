@@ -12,8 +12,9 @@ function setup() {
 }
 
 function draw() {
-	background(300);
-	translate(width / 2, height / 2);
+	// Use the global RGB values for the fill
+	background(r, g, b);
+	translate(width / 5, height / 5);
 
 	stroke(200);
 	// Use the global RGB values for the fill
