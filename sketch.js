@@ -3,8 +3,8 @@
 let yoff = 1;
 
 // Declare RGB variables globally
-let r = 255;
-let g = 0;
+let r = 100;
+let g = 20;
 let b = 0;
 
 function setup() {
