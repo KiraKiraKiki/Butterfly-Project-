@@ -8,13 +8,13 @@ let g = 20;
 let b = 0;
 
 function setup() {
-	createCanvas(100, 100);
+	createCanvas(200, 200);
 }
 
 function draw() {
 	// Use the global RGB values for the fill
 	background(g, b);
-	translate(width / 7, height / 7);
+	translate(width / 2, height / 2);
 
 	stroke(200);
 	// Use the global RGB values for the fill
