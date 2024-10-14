@@ -8,17 +8,18 @@ let g = 20;
 let b = 0;
 
 function setup() {
-	createCanvas(400, 400);
-//forgor the window sizes on that oops.
+	createCanvas(200, 200);
+}
 
 function draw() {
 	// Use the global RGB values for the fill
 	background(g, b);
-	translate(width / 2, height / 2);
+	translate(width / 5, height / 5);
+	translate(width / 7, height / 7);
 
 	stroke(200);
 	// Use the global RGB values for the fill
-	fill(r, g, b);  
+
 	strokeWeight(9);
 
 	let da = PI / 100;
