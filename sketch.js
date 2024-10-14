@@ -8,7 +8,7 @@ let g = 20;
 let b = 0;
 
 function setup() {
-	createCanvas(1000, 1000);
+	createCanvas(100, 100);
 }
 
 function draw() {
