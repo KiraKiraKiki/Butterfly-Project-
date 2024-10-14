@@ -8,7 +8,9 @@ let g = 20;
 let b = 0;
 
 function setup() {
-	createCanvas(200, 200);
+	createCanvas(1440, 900);
+    let fsButton = createButton('Toggle Fullscreen');
+    fsButton.mousePressed(toggleFullscreen);
 }
 
 function draw() {
