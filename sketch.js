@@ -9,11 +9,7 @@ let b = 0;
 
 function setup() {
 	createCanvas(400, 400);
-	// Please center 
-	let x = (windowWidth - width) / 2;
-	let y = (windowHeight - height) / 2;
-	canvas.position(x, y);
-}
+//forgor the window sizes on that oops.
 
 function draw() {
 	// Use the global RGB values for the fill
