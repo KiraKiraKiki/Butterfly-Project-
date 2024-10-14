@@ -8,7 +8,7 @@ let g = 20;
 let b = 0;
 
 function setup() {
-	createCanvas(1440, 900);
+	createCanvas(400, 400);
     let fsButton = createButton('Toggle Fullscreen');
     fsButton.mousePressed(toggleFullscreen);
 }
