@@ -7,6 +7,11 @@ let r = 100;
 let g = 20;
 let b = 0;
 
+function toggleFullscreen() {
+    let fs = fullscreen();
+    fullscreen(!fs);
+}
+
 function setup() {
 	createCanvas(400, 400);
     let fsButton = createButton('Toggle Fullscreen');
