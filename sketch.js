@@ -19,7 +19,7 @@ function draw() {
 
 	stroke(200);
 	// Use the global RGB values for the fill
-
+	fill(r, g, b);  
 	strokeWeight(9);
 
 	let da = PI / 100;
