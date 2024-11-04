@@ -9,10 +9,13 @@ let b = 0;
 
 function setup() { {
 	createCanvas(1400, 400);
-isPaused = true}
-
+isPaused = false}
 function draw() {
-	if (isPaused) {text ("PAUSED" 50, 50)
+	if (isPaused) textSize (100);
+	stroke("black);
+	fill("white);
+	textFont ("Impact");
+	{text ("PAUSED" 50, 50);
 	// Use the global RGB values for the fill
 	background(g, b);
 	translate(width / 2, height / 2);
