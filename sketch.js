@@ -7,11 +7,12 @@ let r = 100;
 let g = 20;
 let b = 0;
 
-function setup() {
+function setup() { {
 	createCanvas(1400, 400);
-}
+isPaused = true}
 
 function draw() {
+	if (isPaused) {text ("PAUSED" 50, 50)
 	// Use the global RGB values for the fill
 	background(g, b);
 	translate(width / 2, height / 2);
