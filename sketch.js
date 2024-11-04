@@ -15,7 +15,8 @@ function draw() {
 	stroke("black);
 	fill("white);
 	textFont ("Impact");
-	{text ("PAUSED" 50, 50);
+	textAlign(CENTER, CENTER);
+	{text ("PAUSED" width / 2, height / 2);
 	// Use the global RGB values for the fill
 	background(g, b);
 	translate(width / 2, height / 2);
@@ -52,3 +53,9 @@ function draw() {
 	g = (g + 2) % 256;
 	b = (b + 3) % 256;
 }
+	function keyPressed()
+	console.log("Key pressed:  " + key);
+	 {if (key === 'p'} {
+		 console.log("hey that was the P key!);
+			     isPaused = true; 
+	 } 
