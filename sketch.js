@@ -21,7 +21,7 @@ function draw() {
 		push(); // We don't want to have side effects when we aren't paused
 		textSize(100);
 		stroke("black");
-		fill("white");
+		fill("pink");
 		textFont("Impact");
 		textAlign(CENTER, CENTER);
 		text("PAUSED", width / 2, height / 2);
@@ -29,13 +29,21 @@ function draw() {
 	} else {
 		// Draw the regular stuff
 
-		if (frameCount % 100 == 51) {
-			backroundR = random(255);
-			backroundG = random(255);
-			backroundB = random(255);
 		// Use the global RGB values for the fill
 		background(backroundR, backroundG, backroundB);
 		translate(width / 2, height / 2);
+
+		for (let i = 0; i < butterflyPositions.length; i++) {
+      		let pos = butterflyPositions[i];
+      		drawButterfly(pos.x, pos.y);
+    }
+		function mousePressed() {
+ 		 butterflyPositions.push(createVector(mouseX, mouseY));
+		}
+
+		function drawButterfly(x, y) {
+		push();
+  		translate(x, y);
 
 		stroke(200);
 		// Use the global RGB values for the fill
@@ -63,6 +71,9 @@ function draw() {
 		endShape();
 
 		yoff += 0.01;
+
+		 pop();  
+}
 
 		// Update the color over time
 		r = (r + 1) % 256;
