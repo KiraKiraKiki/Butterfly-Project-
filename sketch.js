@@ -28,12 +28,16 @@ function draw() {
 		pop(); // Clear our drawing changes
 	} else {
 		// Draw the regular stuff
+
+		if (frameCount % 100 == 51) {
+			backroundR = random(255);
+			backroundG = random(255);
+			backroundB = random(255);
 		// Use the global RGB values for the fill
-		background(g, b);
+		background(backroundR, backroundG, backroundB);
 		translate(width / 2, height / 2);
 
 		stroke(200);
-
 		// Use the global RGB values for the fill
 		fill(r, g, b);  
 		strokeWeight(9);
