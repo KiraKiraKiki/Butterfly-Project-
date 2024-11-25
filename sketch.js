@@ -25,7 +25,6 @@ function draw() {
 	r = (r + 1) % 256;
 	g = (g + 2) % 256;
 	b = (b + 3) % 256;
-
 	yoff += 0.01;
 	if (isPaused) {
 		// Draw PAUSED stuff
@@ -88,12 +87,6 @@ function drawButterfly(x, y, colorOffset) {
 		
 	}
 	endShape();
-	
-	// Update the color over time
-	r = (r + 1) % 256;
-	g = (g + 2) % 256;
-	b = (b + 3) % 256;
-
 	
 	pop();  
 		
