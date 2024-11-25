@@ -94,7 +94,11 @@ function drawButterfly(x, y, colorOffset) {
 		
 }
 
-yoff += 0.01;
+	r = (r + 1) % 256;
+	g = (g + 2) % 256;
+	b = (b + 3) % 256;
+
+	yoff += 0.01;
 
 function keyPressed() {
 	console.log("Key pressed:  " + key);
