@@ -79,10 +79,11 @@ function drawButterfly(x, y, colorOffset) {
 		}
 		//point(x, y);
 		vertex(x, y);
+
+		yoff += 0.01;
 	}
 	endShape();
 	
-	yoff += 0.01;
 	// Update the color over time
 	r = (r + 1) % 256;
 	g = (g + 2) % 256;
