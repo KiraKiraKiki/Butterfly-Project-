@@ -80,7 +80,7 @@ function drawButterfly(x, y, colorOffset) {
 		//point(x, y);
 		vertex(x, y);
 
-		yoff += 0.01;
+		
 	}
 	endShape();
 	
@@ -88,6 +88,8 @@ function drawButterfly(x, y, colorOffset) {
 	r = (r + 1) % 256;
 	g = (g + 2) % 256;
 	b = (b + 3) % 256;
+
+	yoff += 0.01;
 	
 	pop();  
 	
