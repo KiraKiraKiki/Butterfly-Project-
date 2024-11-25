@@ -50,7 +50,7 @@ function draw() {
 }
 
 function mousePressed() {
-	butterflyPositions.push(createVector(mouseX, mouseY, random(225)));
+	butterflyPositions.push(createVector(mouseX, mouseY, random(256)));
 }
 
 function drawButterfly(x, y, colorOffset) {
@@ -59,7 +59,7 @@ function drawButterfly(x, y, colorOffset) {
 	
 	stroke(200);
 	// Use the global RGB values for the fill
-	fill((r + colorOffset) % 225, (g, + colorOffset) % 225 (b + colorOffset) % 225);  
+	fill((r + colorOffset) % 256, (g + colorOffset) % 256, (b + colorOffset) % 256);  
 	strokeWeight(9);
 	
 	let da = PI / 100;
