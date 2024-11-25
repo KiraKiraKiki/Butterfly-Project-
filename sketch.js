@@ -22,6 +22,11 @@ function setup() {
 }
 
 function draw() {
+	r = (r + 1) % 256;
+	g = (g + 2) % 256;
+	b = (b + 3) % 256;
+
+	yoff += 0.01;
 	if (isPaused) {
 		// Draw PAUSED stuff
 		push(); // We don't want to have side effects when we aren't paused
@@ -94,11 +99,7 @@ function drawButterfly(x, y, colorOffset) {
 		
 }
 
-	r = (r + 1) % 256;
-	g = (g + 2) % 256;
-	b = (b + 3) % 256;
 
-	yoff += 0.01;
 
 function keyPressed() {
 	console.log("Key pressed:  " + key);
