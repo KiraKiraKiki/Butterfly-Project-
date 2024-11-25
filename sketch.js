@@ -16,7 +16,7 @@ let isPaused = false;
 let butterflyPositions = [];
 
 function setup() { 
-	createCanvas(1400, 400);
+	createCanvas(1400, 800);
 	isPaused = false;
 	butterflyPositions.push(createVector(width/2, height/2));
 }
